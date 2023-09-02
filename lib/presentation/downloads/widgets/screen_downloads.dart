@@ -25,9 +25,9 @@ class ScreenDownloads extends StatelessWidget {
           )),
       body: SafeArea(
         child: ListView.separated(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             itemBuilder: (ctx, index) => widgetsList[index],
-            separatorBuilder: (ctx, index) => SizedBox(
+            separatorBuilder: (ctx, index) => const SizedBox(
                   height: 12,
                 ),
             itemCount: widgetsList.length),
@@ -71,18 +71,18 @@ class Section2 extends StatelessWidget {
               DownloadImageWidget(
                 imageList: imageList[0],
                 angles: 20,
-                margins: EdgeInsets.only(left: 138, bottom: 35),
+                margins: const EdgeInsets.only(left: 138, bottom: 35),
                 size: Size(size.width * 0.28, size.height * 0.28),
               ),
               DownloadImageWidget(
                   imageList: imageList[1],
                   angles: -20,
-                  margins: EdgeInsets.only(right: 138, bottom: 35),
+                  margins: const EdgeInsets.only(right: 138, bottom: 35),
                   size: Size(size.width * 0.28, size.height * 0.28)),
               DownloadImageWidget(
                 imageList: imageList[2],
                 angles: 0,
-                margins: EdgeInsets.only(left: 0),
+                margins: const EdgeInsets.only(left: 0),
                 size: Size(size.width * 0.35, size.height * 0.3),
               ),
             ],
@@ -107,6 +107,7 @@ class Section3 extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             height: 45,
             onPressed: () {},
+            color: Colors.blue,
             child: const Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
               child: Text(
@@ -117,7 +118,6 @@ class Section3 extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            color: Colors.blue,
           ),
         ),
         kHeight,
@@ -126,6 +126,7 @@ class Section3 extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           height: 45,
           onPressed: () {},
+          color: Colors.white,
           child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
             child: Text(
@@ -136,7 +137,6 @@ class Section3 extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          color: Colors.white,
         )
       ],
     );
@@ -144,9 +144,7 @@ class Section3 extends StatelessWidget {
 }
 
 class _SmartDownloads extends StatelessWidget {
-  const _SmartDownloads({
-    super.key,
-  });
+  const _SmartDownloads();
 
   @override
   Widget build(BuildContext context) {

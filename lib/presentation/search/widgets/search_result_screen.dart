@@ -15,7 +15,7 @@ class SearchResultWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          title(title1: 'Movie & TV'),
+          const title(title1: 'Movie & TV'),
           kHeight,
           Expanded(
             child: GridView.count(
@@ -24,7 +24,7 @@ class SearchResultWidget extends StatelessWidget {
               mainAxisSpacing: 10,
               crossAxisSpacing: 10,
               childAspectRatio: 1 / 1.5,
-              children: List.generate(20, (index) => MainCard()),
+              children: List.generate(20, (index) => const MainCard()),
             ),
           )
         ],
@@ -41,7 +41,7 @@ class MainCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
+          image: const DecorationImage(
               fit: BoxFit.cover, image: NetworkImage(gridImage))),
     );
   }

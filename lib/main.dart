@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
           primaryColor: backgroundcolor,
           useMaterial3: true,
           scaffoldBackgroundColor: backgroundcolor,
-          textTheme: TextTheme(
-              bodyText1: TextStyle(color: Colors.white),
-              bodyText2: TextStyle(color: Colors.white))),
-      home: ScreenMainPage(),
+          textTheme: const TextTheme(
+              bodyLarge: TextStyle(color: Colors.white),
+              bodyMedium: TextStyle(color: Colors.white))),
+      home: const ScreenMainPage(),
     );
   }
 }

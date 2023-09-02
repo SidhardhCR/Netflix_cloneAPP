@@ -16,14 +16,14 @@ class SearchIdle extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          title(
+          const title(
             title1: 'Top Searches',
           ),
           kHeight,
           Expanded(
             child: ListView.separated(
                 shrinkWrap: true,
-                itemBuilder: (ctx, index) => SearchTile(),
+                itemBuilder: (ctx, index) => const SearchTile(),
                 separatorBuilder: (ctx, index) => kHeight,
                 itemCount: 10),
           ),
@@ -46,17 +46,17 @@ class SearchTile extends StatelessWidget {
           height: 85,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              image: DecorationImage(
+              image: const DecorationImage(
                   fit: BoxFit.cover, image: NetworkImage(posterImage))),
         ),
         kWidth,
-        Expanded(
+        const Expanded(
           child: Text(
             'Movie Name',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
         ),
-        CircleAvatar(
+        const CircleAvatar(
           backgroundColor: Colors.white,
           radius: 25,
           child: CircleAvatar(

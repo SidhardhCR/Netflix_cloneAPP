@@ -11,10 +11,10 @@ class AppBarWidgets extends StatelessWidget {
         kWidth,
         Text(
           title,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 33),
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 33),
         ),
-        Spacer(),
-        Icon(
+        const Spacer(),
+        const Icon(
           Icons.cast,
           color: Colors.white,
           size: 30,

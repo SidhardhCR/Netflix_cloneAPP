@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_app/presentation/fast_laugh/widgets/video_list_widget.dart';
 
 class ScreenFastLaugh extends StatelessWidget {
   const ScreenFastLaugh({super.key});
@@ -6,7 +7,14 @@ class ScreenFastLaugh extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Center(child: Text('ScreenFastLaugh'))),
-    );
+        body: SafeArea(
+            child: PageView(
+      scrollDirection: Axis.vertical,
+      children: List.generate(
+          10,
+          (index) => VideoListItem(
+                index: index,
+              )),
+    )));
   }
 }
