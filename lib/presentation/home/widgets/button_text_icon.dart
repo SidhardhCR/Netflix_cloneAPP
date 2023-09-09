@@ -15,7 +15,7 @@ class ButtonTextIcon extends StatelessWidget {
         ),
         Text(
           title,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
         )
       ],
     );

@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_app/core/colors/constants.dart';
-import 'package:netflix_clone_app/presentation/widgets/AppBarWidgets.dart';
+import 'package:netflix_clone_app/presentation/widgets/custom_App_bar.dart';
 
 const imageList = [
   "https://www.themoviedb.org/t/p/w220_and_h330_face/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
@@ -17,20 +17,23 @@ class ScreenDownloads extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(50),
-          child: AppBarWidgets(
-            title: 'Downloads',
-          )),
-      body: SafeArea(
-        child: ListView.separated(
-            padding: const EdgeInsets.all(10),
-            itemBuilder: (ctx, index) => widgetsList[index],
-            separatorBuilder: (ctx, index) => const SizedBox(
-                  height: 12,
-                ),
-            itemCount: widgetsList.length),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          title: const CustomAppBar(
+            name: 'Downloads',
+          ),
+        ),
+        body: SafeArea(
+          child: ListView.separated(
+              padding: const EdgeInsets.all(10),
+              itemBuilder: (ctx, index) => widgetsList[index],
+              separatorBuilder: (ctx, index) => const SizedBox(
+                    height: 12,
+                  ),
+              itemCount: widgetsList.length),
+        ),
       ),
     );
   }

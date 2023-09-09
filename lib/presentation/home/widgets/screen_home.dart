@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -53,7 +52,7 @@ class ScreenHome extends StatelessWidget {
                                   Container(
                                     width: double.infinity,
                                     height: 500,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         image: DecorationImage(
                                             fit: BoxFit.fill,
                                             image: NetworkImage(image2))),
@@ -66,7 +65,7 @@ class ScreenHome extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        ButtonTextIcon(
+                                        const ButtonTextIcon(
                                           title: 'My List',
                                           icon: Icons.add,
                                         ),
@@ -86,7 +85,7 @@ class ScreenHome extends StatelessWidget {
                                                   color: Colors.black,
                                                   fontSize: 20),
                                             )),
-                                        ButtonTextIcon(
+                                        const ButtonTextIcon(
                                             icon: Icons.info_outlined,
                                             title: 'info')
                                       ],
@@ -135,7 +134,7 @@ class ScreenHome extends StatelessWidget {
                         ),
                         scrolldirection.value == true
                             ? AnimatedContainer(
-                                duration: Duration(milliseconds: 1000),
+                                duration: const Duration(milliseconds: 1000),
                                 width: double.infinity,
                                 height: 100,
                                 color: Colors.black.withOpacity(0.3),
@@ -143,12 +142,12 @@ class ScreenHome extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Image(
+                                        const Image(
                                           image: NetworkImage(netflixLogo),
                                           width: 70,
                                           height: 70,
                                         ),
-                                        Spacer(),
+                                        const Spacer(),
                                         const Icon(
                                           Icons.cast,
                                           color: Colors.white,
@@ -163,7 +162,7 @@ class ScreenHome extends StatelessWidget {
                                         kWidth,
                                       ],
                                     ),
-                                    Row(
+                                    const Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
