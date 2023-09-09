@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_app/presentation/new&hot/widgets/Coming_Soon_widget.dart';
 import 'package:netflix_clone_app/presentation/widgets/custom_App_bar.dart';
 
 class ScreenNewAndHot extends StatelessWidget {
@@ -37,15 +38,18 @@ class ScreenNewAndHot extends StatelessWidget {
           ),
         ),
         body: TabBarView(children: [
-          _comingsoon(),
+          _comingsoon(context),
           _everyonesWatching(),
         ]),
       ),
     );
   }
 
-  Widget _comingsoon() {
-    return const Center(child: Text('Coming Soon'));
+  Widget _comingsoon(BuildContext context) {
+    return ListView.builder(
+      itemBuilder: (ctx, index) => const ComingSoonWidget(),
+      itemCount: 10,
+    );
   }
 
   Widget _everyonesWatching() {
