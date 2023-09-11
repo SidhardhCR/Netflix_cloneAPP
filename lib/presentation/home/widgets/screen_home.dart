@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix_clone_app/core/colors/constants.dart';
-import 'package:netflix_clone_app/presentation/home/widgets/button_text_icon.dart';
+import 'package:netflix_clone_app/presentation/widgets/button_text_icon.dart';
 import 'package:netflix_clone_app/presentation/home/widgets/main_title_card.dart';
 import 'package:netflix_clone_app/presentation/home/widgets/number_card.dart';
 import 'package:netflix_clone_app/presentation/search/widgets/title.dart';

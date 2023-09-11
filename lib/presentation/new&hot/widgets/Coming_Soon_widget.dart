@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_clone_app/core/colors/constants.dart';
-import 'package:netflix_clone_app/presentation/home/widgets/button_text_icon.dart';
+import 'package:netflix_clone_app/presentation/widgets/button_text_icon.dart';
 
 const image =
     'https://www.themoviedb.org/t/p/w533_and_h300_bestv2/bAnHzJ6AMhOhnV3C0kTxkpCqpgM.jpg';
