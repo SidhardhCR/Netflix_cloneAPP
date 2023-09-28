@@ -17,12 +17,12 @@ class EveryoneWatchingWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('JAWAN',
+          const Text('JAWAN',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold)),
-          Text(
+          const Text(
             "A man is driven by a personal vendetta to rectify the wrongs in society, while keeping a promise made years ago. He comes up against a monstrous outlaw with no fear, who's caused extreme suffering to many.",
             style: TextStyle(
               color: Colors.grey,
@@ -58,7 +58,7 @@ class EveryoneWatchingWidget extends StatelessWidget {
             ],
           ),
           kHeight,
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               ButtonTextIcon(icon: Icons.telegram, title: 'Share'),
