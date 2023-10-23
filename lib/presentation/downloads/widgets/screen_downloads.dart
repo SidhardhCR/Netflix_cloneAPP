@@ -49,7 +49,7 @@ class Section2 extends StatelessWidget {
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       BlocProvider.of<DownloadsBloc>(context)
-          .add(DownloadsEvent.getDownloadsImage());
+          .add(const DownloadsEvent.getDownloadsImage());
     });
     final Size size = MediaQuery.of(context).size;
     return Column(
@@ -72,7 +72,7 @@ class Section2 extends StatelessWidget {
           child: BlocBuilder<DownloadsBloc, DownloadsState>(
             builder: (context, state) {
               return state.isLoading
-                  ? Center(child: CircularProgressIndicator())
+                  ? const Center(child: CircularProgressIndicator())
                   : SizedBox(
                       width: size.width,
                       height: 300,

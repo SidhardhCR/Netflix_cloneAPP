@@ -6,5 +6,4 @@ part 'main_failures.freezed.dart';
 class MainFailures with _$MainFailures {
   const factory MainFailures.clientFailures() = _ClientFailures;
   const factory MainFailures.serverFailures() = _ServerFailures;
-  
 }

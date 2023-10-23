@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
@@ -29,7 +28,6 @@ class DownloadsBloc extends Bloc<DownloadsEvent, DownloadsState> {
             isLoading: false,
             downloadsSuccesOrFailureOption: Some(
               Left(failure),
-              
             ),
           ),
           (success) => state.copyWith(
